@@ -1,3 +1,7 @@
+body, #Tallmonitor, #Waymonitor, #littlemonitor {
+  margin: 0;
+}
+
 #container {
   width: 100%;
   height: 100vh;
@@ -9,11 +13,11 @@
     background-color: green;
   }
 
-  #Waymonitor {
-    color: green;
+  #Tallmonitor {
+    font-size: 50px;
   }
 
-  #littlemonitor {
+  #Waymonitor, #littlemonitor {
     color: green;
   }
 }
@@ -21,43 +25,27 @@
 @media screen and (max-width:850px) {
   #container {
     background-color: orange;
-    display: block;
-    clear: both;
   }
 
   #Waymonitor {
     color: black;
+    font-size: 25px;
   }
 
-  #Tallmonitor {
+  #Tallmonitor, #littlemonitor {
     color: orange;
-  }
-
-  #littlemonitor {
-    color: orange;
-  }
-}
+} }
 
 @media screen and (max-width:600px) {
   #container {
     background-color: red;
   }
-
-  #littlemonitor {
-    background-color: red;
-    display: block;
-    clear: both;
-  }
-
-  #littlemonitor {
+ #littlemonitor {
     color: black;
+    font-size: 10px;
   }
 
-  #Tallmonitor {
+  #Tallmonitor, #Waymonitor {
     color: red;
   }
-
-  #Waymonitor {
-    color: red;
   }
-}
